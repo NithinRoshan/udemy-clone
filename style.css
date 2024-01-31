@@ -50,7 +50,15 @@ body{
     color: whitesmoke;
     padding: 10px;
     border-radius: 30px;
+    border: solid purple 2px;
 
+
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid purple 2px;
 }
 .sale-image img{
     width: 100%;
@@ -132,4 +140,31 @@ flex-grow: 1;
 }
 .footer__one__2{
     padding: 10px;
+}
+.sale-image h1{
+    width: 500px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.sale-image{
+    position: relative;
+    
+
+}
+@keyframes zoom {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
